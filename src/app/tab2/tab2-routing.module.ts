@@ -6,7 +6,8 @@ const routes: Routes = [
   {
     path: '',
     component: Tab2Page,
-  }
+  },
+  {path : 'male', loadChildren : () => import('../male-character/male-character.module').then(m=>m.MaleCharacterPageModule)}
 ];
 
 @NgModule({
